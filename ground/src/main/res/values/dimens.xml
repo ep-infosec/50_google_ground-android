@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright 2018 Google LLC
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+  <!-- Map -->
+  <dimen name="polyline_stroke_width">4dp</dimen>
+  <dimen name="selected_polyline_stroke_width">7dp</dimen>
+  <item name="marker_bitmap_default_scale" format="float" type="dimen">1.8</item>
+  <item name="marker_bitmap_zoomed_scale" format="float" type="dimen">2.5</item>
+
+  <!-- Task -->
+  <dimen name="task_label_text_size">14sp</dimen>
+  <dimen name="edit_task_label_text_size">18sp</dimen>
+  <dimen name="task_value_text_size">18sp</dimen>
+  <dimen name="task_horizontal_padding">16dp</dimen>
+  <dimen name="task_top_padding">18dp</dimen>
+  <dimen name="task_value_top_padding">4dp</dimen>
+  <dimen name="task_bottom_padding">0dp</dimen>
+  <dimen name="task_horizontal_margin">14dp</dimen>
+  <dimen name="task_vertical_margin">8dp</dimen>
+
+  <!-- Space between tasks in Submission Details View -->
+  <dimen name="details_task_spacing">4dp</dimen>
+
+  <!-- Submission menu button -->
+  <dimen name="submission_menu_btn_top">6dp</dimen>
+  <dimen name="menu_btn_width">24dp</dimen>
+  <dimen name="menu_btn_height">24dp</dimen>
+
+  <!-- Sheet titleText -->
+  <dimen name="sheet_title_text_size">20sp</dimen>
+  <dimen name="sheet_title_horizontal_margin">10dp</dimen>
+  <dimen name="sheet_title_top_margin">8dp</dimen>
+
+  <dimen name="header_task_horizontal_margin">12dp</dimen>
+
+  <!-- Task selection tabs -->
+  <dimen name="tab_max_width">264dp</dimen>
+  <dimen name="tab_padding_bottom">16dp</dimen>
+  <dimen name="tab_label">14sp</dimen>
+  <dimen name="custom_tab_layout_height">72dp</dimen>
+  <dimen name="input_error">12sp</dimen>
+  <dimen name="submission_menu_btn_right">2dp</dimen>
+  <dimen name="map_btn_spacing">8dp</dimen>
+  <dimen name="map_btn_margin_right">8dp</dimen>
+  <dimen name="map_btn_margin_bottom">8dp</dimen>
+  <dimen name="toolbar_button_margin_top">8dp</dimen>
+  <dimen name="toolbar_button_margin_right">12dp</dimen>
+  <dimen name="chip_button_margin_bottom">16dp</dimen>
+  <dimen name="chip_button_margin_right">14dp</dimen>
+  <dimen name="fab_margin">16dp</dimen>
+  <dimen name="sheet_subtitle_text_size">14dp</dimen>
+  <dimen name="submission_heading_height">32dp</dimen>
+  <dimen name="submission_status_margin_left">6dp</dimen>
+  <dimen name="submission_status_text_size">12sp</dimen>
+  <dimen name="data_sheet_header_height">70dp</dimen>
+  <dimen name="task_error_padding_bottom">6dp</dimen>
+  <!-- TODO: Make dimensions relative using Android data binding. -->
+  <dimen name="bottom_sheet_margin_top">16dp</dimen>
+  <dimen name="loi_details_icon_bg_diameter">58dp</dimen>
+  <dimen name="loi_details_icon_elevation">5dp</dimen>
+  <dimen name="loi_details_header_padding_top">42dp</dimen>
+  <dimen name="loi_details_header_corner_radius">6dp</dimen>
+  <dimen name="submission_list_item_horizontal_margin">14dp</dimen>
+  <dimen name="submission_list_item_horizontal_vertical">10dp</dimen>
+  <dimen name="submission_list_task_label_size">12sp</dimen>
+  <dimen name="submission_list_text_size">14sp</dimen>
+  <dimen name="submission_summary_text_padding_right">8dp</dimen>
+  <dimen name="submission_summary_text_max_width">128dp</dimen>
+  <dimen name="chip_button_padding">14dp</dimen>
+  <dimen name="chip_button_corner_radius">24dp</dimen>
+  <dimen name="chip_button_min_height">48dp</dimen>
+  <dimen name="chip_button_text_size">14sp</dimen>
+  <dimen name="chip_toolbar_button_corner_radius">20dp</dimen>
+  <dimen name="chip_toolbar_button_padding">10dp</dimen>
+  <dimen name="chip_toolbar_button_min_height">36dp</dimen>
+  <dimen name="toolbar_elevation">4dp</dimen>
+  <dimen name="loi_details_header_padding_bottom">16dp</dimen>
+  <dimen name="submission_list_item_preview_table_right_margin">18dp</dimen>
+  <dimen name="offline_area_toolbar_padding_top">16dp</dimen>
+  <dimen name="loi_details_header_height">120dp</dimen>
+
+  <!-- Photo bottom dialog -->
+  <dimen name="add_photo_bottom_sheet_drawable_margin">24dp</dimen>
+  <dimen name="add_photo_bottom_sheet_text_size">16sp</dimen>
+
+  <!-- Photo CardView -->
+  <dimen name="cardview_elevation">4dp</dimen>
+  <dimen name="photo_label_horizontal_padding">10dp</dimen>
+  <dimen name="photo_label_vertical_padding">5dp</dimen>
+
+  <!-- Offline areas UI -->
+  <dimen name="offline_area_viewer_map_container_width">20dp</dimen>
+  <dimen name="offline_area_viewer_map_container_height">20dp</dimen>
+  <dimen name="selector_dialog_list_item_padding">26dp</dimen>
+  <dimen name="selector_dialog_list_item_text_size">16sp</dimen>
+  <dimen name="selector_dialog_progress_bar_padding">48dp</dimen>
+  <dimen name="upload_pending_icon_margin_bottom">2dp</dimen>
+  <dimen name="upload_pending_icon_margin_end">2dp</dimen>
+
+  <!-- Navigation drawer -->
+  <dimen name="nav_drawer_profile_image_size">64dp</dimen>
+
+  <!-- LOI bottom card -->
+  <dimen name="loi_card_item_margin">10dp</dimen>
+  <dimen name="loi_card_item_title_text_size">14sp</dimen>
+</resources>

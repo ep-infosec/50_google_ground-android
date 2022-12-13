@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright 2020 Google LLC
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <PreferenceCategory
+    app:iconSpaceReserved="false"
+    app:key="general_category"
+    app:title="General">
+
+    <SwitchPreferenceCompat
+      app:iconSpaceReserved="false"
+      app:key="upload_media"
+      app:summary="Over Wi-Fi only"
+      app:title="Upload media" />
+
+    <SwitchPreferenceCompat
+      app:iconSpaceReserved="false"
+      app:key="offline_areas"
+      app:summary="Over Wi-Fi only"
+      app:title="Offline areas download" />
+
+  </PreferenceCategory>
+
+  <PreferenceCategory
+    app:iconSpaceReserved="false"
+    app:key="help_category"
+    app:title="Help">
+
+    <Preference
+      app:iconSpaceReserved="false"
+      app:key="visit_website"
+      app:summary="@string/ground_website"
+      app:title="Visit website" />
+
+    <!-- TODO(https://github.com/google/ground-android/pull/742): Re-enable once the locationOfInterest is implemented -->
+    <Preference
+      app:iconSpaceReserved="false"
+      app:key="feedback"
+      app:isPreferenceVisible="false"
+      app:summary="Report technical issues or suggest new locationsOfInterest"
+      app:title="Send feedback" />
+
+  </PreferenceCategory>
+
+</PreferenceScreen>

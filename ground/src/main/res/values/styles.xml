@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright 2018 Google LLC
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+
+  <style name="AppTheme" parent="AppTheme.Base" />
+
+  <style name="AppTheme.Launcher">
+    <item name="android:windowBackground">@drawable/launch_screen</item>
+  </style>
+
+  <style name="AppTheme.Base" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <!-- See https://material.io/develop/android/theming/color/ for full list. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+  <style name="LocationOfInterestDetailsToolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    <item name="colorControlNormal">@color/colorBackground</item>
+    <item name="android:textColor">@color/colorForeground</item>
+  </style>
+
+  <style name="ToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+    <item name="android:textColor">@color/colorForeground</item>
+  </style>
+
+  <style name="ToolbarSubtitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+    <item name="android:textColor">@color/colorGrey600</item>
+    <item name="android:textSize">12sp</item>
+  </style>
+
+  <style name="PrimaryToolbarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+    <item name="android:background">@color/colorBackground</item>
+    <item name="gndToolbarTitleStyle">@style/ToolbarTitle</item>
+    <item name="gndToolbarSubtitleStyle">@style/ToolbarSubtitle</item>
+    <item name="colorControlNormal">@color/colorAccent</item>
+  </style>
+
+  <style name="SubmissionListText">
+    <item name="android:textSize">@dimen/submission_list_text_size</item>
+  </style>
+
+  <style name="SubmissionListText.CreatorName">
+    <item name="android:textColor">?android:textColorPrimary</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="SubmissionListText.Separator">
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+
+  <style name="SubmissionListText.Timestamp">
+    <item name="android:textColor">?android:textColorPrimary</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="SubmissionListText.TaskLabel">
+    <item name="android:textColor">@color/colorGrey600</item>
+    <item name="android:textSize">@dimen/submission_list_task_label_size</item>
+  </style>
+
+  <!--
+    NOTE: Most attributes do not work when style is set programmatically, so individual layout
+    attributes are set in SubmissionListAdapter instead.
+    -->
+  <style name="SubmissionListText.Task">
+    <item name="android:textColor">@color/colorGrey800</item>
+  </style>
+
+  <style name="SubmissionDetails.Task.Label" parent="AppTheme.Base">
+    <item name="android:textColor">@color/colorGrey600</item>
+    <item name="android:textSize">@dimen/task_label_text_size</item>
+  </style>
+
+  <style name="SubmissionDetails.Task.Value" parent="AppTheme.Base">
+    <item name="android:textColor">@color/colorForeground</item>
+    <item name="android:textSize">@dimen/task_value_text_size</item>
+  </style>
+
+  <style name="EditSubmission.Task.Label" parent="AppTheme.Base">
+    <item name="android:textColor">@color/colorForeground</item>
+    <item name="android:textSize">@dimen/edit_task_label_text_size</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="EditSubmission.Task.Text" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+    <!-- TODO -->
+    <item name="boxStrokeColor">@color/colorAccent</item>
+  </style>
+
+  <style name="ImageButton" parent="Widget.AppCompat.ImageButton">
+    <item name="android:tint">@color/colorAccent</item>
+    <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+  </style>
+
+  <style name="ChipButton" parent="Widget.MaterialComponents.Chip.Action">
+    <item name="chipBackgroundColor">@color/colorAccent</item>
+    <item name="chipCornerRadius">@dimen/chip_button_corner_radius</item>
+    <item name="chipStartPadding">@dimen/chip_button_padding</item>
+    <item name="chipEndPadding">@dimen/chip_button_padding</item>
+    <item name="chipMinHeight">@dimen/chip_button_min_height</item>
+    <!-- textColor inside textAppearance stopped working in 28.0.0-rc02. -->
+    <item name="chipIconTint">@color/colorBackground</item>
+    <item name="android:textColor">@color/colorBackground</item>
+    <item name="android:textAppearance">@style/ChipButtonText</item>
+  </style>
+
+  <style name="ChipButton.Toolbar">
+    <item name="chipCornerRadius">@dimen/chip_toolbar_button_corner_radius</item>
+    <item name="chipStartPadding">@dimen/chip_toolbar_button_padding</item>
+    <item name="chipEndPadding">@dimen/chip_toolbar_button_padding</item>
+    <item name="chipMinHeight">@dimen/chip_toolbar_button_min_height</item>
+  </style>
+
+  <style name="ChipButtonText">
+    <item name="android:textSize">@dimen/chip_button_text_size</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="TaskView">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginTop">@dimen/task_vertical_margin</item>
+    <item name="android:layout_marginBottom">@dimen/task_vertical_margin</item>
+    <item name="android:layout_marginStart">@dimen/task_horizontal_margin</item>
+    <item name="android:layout_marginEnd">@dimen/task_horizontal_margin</item>
+    <item name="android:layout_marginLeft">@dimen/task_horizontal_margin</item>
+    <item name="android:layout_marginRight">@dimen/task_horizontal_margin</item>
+  </style>
+
+  <!-- NavDrawer Header -->
+  <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+    <item name="cornerSize">50%</item>
+  </style>
+
+  <style name="NavDrawerHeader">
+    <item name="android:layout_marginStart">24dp</item>
+    <item name="android:layout_marginLeft">24dp</item>
+  </style>
+
+  <style name="NavDrawerHeader.Image">
+    <item name="android:layout_width">@dimen/nav_drawer_profile_image_size</item>
+    <item name="android:layout_height">@dimen/nav_drawer_profile_image_size</item>
+    <item name="android:layout_marginTop">24dp</item>
+    <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.App.CornerSize50Percent</item>
+  </style>
+
+  <style name="NavDrawerHeader.PrimaryText">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginTop">24dp</item>
+    <item name="android:textAppearance">@style/TextAppearance.AppCompat.Headline</item>
+    <item name="android:textColor">@color/colorForeground</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="NavDrawerHeader.SecondaryText">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginBottom">24dp</item>
+    <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+    <item name="android:textColor">@color/colorGrey800</item>
+  </style>
+
+</resources>

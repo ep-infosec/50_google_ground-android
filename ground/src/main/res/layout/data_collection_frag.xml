@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright 2022 Google LLC
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+    <variable
+      name="viewModel"
+      type="com.google.android.ground.ui.datacollection.DataCollectionViewModel" />
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.ground.ui.common.TwoLineToolbar
+      android:id="@+id/data_collection_toolbar"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:elevation="@dimen/toolbar_elevation"
+      android:theme="@style/PrimaryToolbarTheme"
+      app:layout_constraintVertical_bias="0"
+      app:layout_constraintVertical_chainStyle="packed"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toTopOf="@+id/pager"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:subtitle="@{viewModel.loiName}"
+      app:title="@{viewModel.jobName}" />
+
+    <androidx.viewpager2.widget.ViewPager2
+      android:id="@+id/pager"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:paddingTop="20dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/data_collection_toolbar"
+      app:layout_constraintBottom_toTopOf="@+id/data_collection_continue_button"/>
+
+    <Button
+      android:id="@+id/data_collection_continue_button"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="28dp"
+      android:text="@string/continue_text"
+      android:onClick="@{() -> viewModel.onContinueClicked()}"
+      app:layout_constraintWidth_default="wrap"
+      app:backgroundTint="@color/colorAccent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/pager" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

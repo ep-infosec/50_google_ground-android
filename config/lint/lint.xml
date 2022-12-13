@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright 2019 Google LLC
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<lint>
+  <!-- Severity: Warning -->
+  <issue id="InvalidPackage" severity="warning" />
+  <issue id="LintError" severity="warning" />
+  <issue id="MissingTranslation" severity="warning" />
+
+  <!-- Severity: Error -->
+  <issue id="ApplySharedPref" severity="error" />
+  <issue id="Deprecated" severity="error">
+    <ignore path="res/layout/multiple_choice_input_task.xml" />
+  </issue>
+  <issue id="DuplicateIds" severity="error" />
+  <issue id="FragmentTagUsage" severity="error" />
+  <issue id="HardcodedText" severity="error" />
+  <issue id="IconXmlAndPng" severity="error" />
+  <issue id="LogNotTimber" severity="error" />
+  <issue id="NonConstantResourceId" severity="error" />
+  <issue id="RtlHardcoded" severity="error" />
+  <issue id="PxUsage" severity="error" />
+  <issue id="Registered" severity="error" />
+  <issue id="SetTextI18n" severity="error" />
+  <issue id="SpUsage" severity="error" />
+  <issue id="TypographyEllipsis" severity="error" />
+  <issue id="TypographyQuotes" severity="error" />
+  <issue id="Typos" severity="error" />
+  <issue id="UnusedResources" severity="error">
+    <!-- Maps API key is used internally by SDK. -->
+    <ignore regexp="res/values/google_maps_api.xml" />
+    <!-- TODO: Remove the below ignores -->
+    <ignore regexp="res/values/colors.xml" />
+    <ignore regexp="res/values/dimens.xml" />
+    <ignore regexp="res/values/strings.xml" />
+  </issue>
+  <issue id="UselessLeaf" severity="error">
+    <ignore path="res/layout/feature_details_frag.xml" />
+  </issue>
+  <issue id="UselessParent" severity="error" />
+  <issue id="UseCompatLoadingForDrawables" severity="error" />
+  <issue id="UseCompatTextViewDrawableXml" severity="error" />
+  <issue id="ValidActionsXml" severity="error" />
+  <issue id="WrongThreadInterprocedural" severity="error" />
+</lint>
